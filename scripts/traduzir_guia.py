@@ -24,7 +24,7 @@ MODEL = 'openai/gpt-5.4-nano'
 PRICE = {'prompt': 0.20e-6, 'completion': 1.25e-6}  # USD/token (tabela 19/09/2026), só se a API não informar custo
 LANGS = {'en': 'English', 'es': 'Spanish (neutral Latin American)'}
 HTML_LANG = {'pt': 'pt-BR', 'en': 'en', 'es': 'es'}
-SITE = 'https://inematds.github.io/expedicaosul/guia/'
+SITE = 'https://linnoff88-dev.github.io/
 BATCH_CHARS = 7000
 PH = re.compile(r'⟪P\d+⟫')
 LETTER = re.compile(r'[A-Za-zÀ-ÿ]')
@@ -33,7 +33,7 @@ GLOSSARY = {
     'keep_literal': ['Expedição Sul', 'Hua Hum', 'Paso Hua Hum', 'San Martín de los Andes', 'Pirihueico',
                      'Lago Lácar', 'RP48', 'Ruta Provincial 48', 'CH-203', 'Defender 110', 'Taos', 'Tucson',
                      'HyperFrames', 'GSAP', 'OSRM', 'OSM', 'Esri', 'SRTM', 'Lyria', 'flux2-klein', 'trip.js',
-                     'Claude Code', 'INEMA', 'INEMA.CLUB', 'PRO', 'HUD', 'cam', 't→km', 'z7–12', 'Magnific',
+                     'Claude Code', 'ARCKHÉ', 'ARCKHÉ AI', 'PRO', 'HUD', 'cam', 't→km', 'z7–12', 'Magnific',
                      'Wikipedia', 'Wikimedia Commons', 'OpenStreetMap', 'OpenTopoData', 'Overpass', 'GitHub',
                      'Fronteira da Paz', 'Colonia Express', 'Chuí/Chuy', 'Taim'],
     'never_translate_to': {'es': ['Expedición Sur', 'piernas', 'golpe', 'trilhas'], 'en': ['metronome', 'agenda']},

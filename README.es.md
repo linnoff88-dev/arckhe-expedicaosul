@@ -2,7 +2,7 @@
 
 # Expedição Sul — animaciones de recorrido
 
-[![Expedição Sul](guia/assets/banner.jpg)](https://inematds.github.io/expedicaosul/guia/es/)
+[![Expedição Sul](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 Tres viajes en auto por los Andes, por la pampa y por la costa de Uruguay, convertidos en **animaciones de mapa**:
 satélite real, el vehículo avanzando por la carretera real, panel con km, altitud, país y carretera, y abajo un
@@ -13,7 +13,7 @@ Hecho con [HyperFrames](https://hyperframes.heygen.com) (HTML → video) y Claud
 
 ## 📖 Guía de uso
 
-Guía completa (los 8 videos + cómo funciona el motor de ruta + paso a paso): **https://inematds.github.io/expedicaosul/guia/es/**
+Guía completa (los 8 videos + cómo funciona el motor de ruta + paso a paso): **https://linnoff88-dev.github.io/
 
 ---
 
@@ -150,4 +150,4 @@ Natural Earth · OSRM · SRTM 30 m vía OpenTopoData · Wikipedia (ES/PT/EN).
 
 **Generado por IA:** vehículos y ferry vistos desde arriba (flux2-klein) · pistas musicales y efectos de sonido (Magnific — Lyria 3 Pro / ElevenLabs).
 
-Contenido abierto de [INEMA.CLUB](https://inema.club).
+Contenido abierto de [ARCKHÉ AI](https://ARCKHÉ AI).

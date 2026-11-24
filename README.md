@@ -1,4 +1,4 @@
-﻿**PT** Â· [EN](README.en.md) Â· [ES](README.es.md)
+**PT** Â· [EN](README.en.md) Â· [ES](README.es.md)
 
 # ExpediÃ§Ã£o Sul â€” animaÃ§Ãµes de trajeto
 
@@ -8,7 +8,7 @@
 </div>
 
 
-[![ExpediÃ§Ã£o Sul](guia/assets/banner.jpg)](https://inematds.github.io/expedicaosul/guia/)
+[![ExpediÃ§Ã£o Sul](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 TrÃªs viagens de carro pelos Andes, pelo pampa e pelo litoral do Uruguai, transformadas em **animaÃ§Ãµes de mapa**:
 satÃ©lite real, o veÃ­culo andando na estrada verdadeira, painel com km, altitude, paÃ­s e estrada, e embaixo um
@@ -19,7 +19,7 @@ Feito com [HyperFrames](https://hyperframes.heygen.com) (HTML â†’ vÃ­deo)
 
 ## ðŸ“– Guia de uso
 
-Guia completo (os 8 vÃ­deos + como o motor de rota funciona + passo a passo): **https://inematds.github.io/expedicaosul/guia/**
+Guia completo (os 8 vÃ­deos + como o motor de rota funciona + passo a passo): **https://linnoff88-dev.github.io/
 
 ---
 
@@ -156,7 +156,7 @@ Natural Earth Â· OSRM Â· SRTM 30 m via OpenTopoData Â· Wikipedia (ES/PT/EN
 
 **Gerado por IA:** veÃ­culos e balsa vistos de cima (flux2-klein) Â· trilhas e efeitos sonoros (Magnific â€” Lyria 3 Pro / ElevenLabs).
 
-ConteÃºdo aberto do [INEMA.CLUB](https://inema.club).
+ConteÃºdo aberto do [ARCKHÉ AI](https://ARCKHÉ AI).
 
 ---
 

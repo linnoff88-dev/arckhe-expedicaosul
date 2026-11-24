@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Expedição Sul — animações de trajeto e o motor de rota</title>
 <meta name="description" content="Três viagens de carro pelos Andes, pampa e litoral do Uruguai viraram animações de mapa com satélite real, veículo na estrada verdadeira, HUD e diário de bordo. Veja os 8 vídeos e como o motor de rota (HTML + GSAP + HyperFrames) funciona por dentro.">
-<link rel="alternate" hreflang="pt-BR" href="https://inematds.github.io/expedicaosul/guia/">
-<link rel="alternate" hreflang="en" href="https://inematds.github.io/expedicaosul/guia/en/">
-<link rel="alternate" hreflang="es" href="https://inematds.github.io/expedicaosul/guia/es/">
-<link rel="alternate" hreflang="x-default" href="https://inematds.github.io/expedicaosul/guia/">
+<link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="es" href="https://linnoff88-dev.github.io/
+<link rel="alternate" hreflang="x-default" href="https://linnoff88-dev.github.io/
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -40,8 +40,8 @@
   nav .brand{display:flex;align-items:center;gap:8px;font-family:Sora;font-weight:800;letter-spacing:-.02em;color:var(--amb)}
   nav .brand .emoji{font-size:1.25rem}
   nav .sep{color:var(--mut);opacity:.45}
-  nav .inema{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
-  nav .inema:hover{filter:brightness(1.15)}
+  nav .ARCKHÉ{color:var(--sky);font-weight:600;font-size:.88rem;font-family:Sora}
+  nav .ARCKHÉ:hover{filter:brightness(1.15)}
   nav .pro{color:var(--pro);font-weight:600;font-size:.88rem;font-family:Sora}
   nav .pro:hover{filter:brightness(1.15)}
   nav .clubpro{display:inline-flex;align-items:center;gap:6px}
@@ -131,9 +131,9 @@
   <a class="brand" href="#top"><span class="emoji">🗺️</span> Expedição Sul</a>
   <span class="sep">|</span>
   <span class="clubpro">
-    <a class="inema" href="https://inema.club" target="_blank" rel="noopener">INEMA.CLUB</a>
+    <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
     <span class="sep">-</span>
-    <a class="pro" href="https://inema.pro" target="_blank" rel="noopener">PRO</a>
+    <a class="pro" href="https://ARCKHÉ.pro" target="_blank" rel="noopener">PRO</a>
   </span>
   <div class="links">
     <a class="sec" href="#videos">Vídeos</a>
@@ -143,7 +143,7 @@
     <a class="sec" href="#custos">Custos</a>
     <span class="lang" id="langsel" aria-label="Idioma"><a href="index.html" hreflang="pt-BR" lang="pt-BR" aria-current="page">PT</a><span class="dot">·</span><a href="en/index.html" hreflang="en" lang="en">EN</a><span class="dot">·</span><a href="es/index.html" hreflang="es" lang="es">ES</a></span>
     <button class="tgl" id="themeToggle" aria-label="Alternar tema" title="Alternar tema">🌙</button>
-    <a class="btn" href="https://github.com/inematds/expedicaosul" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="https://github.com/linnoff88-dev/expedicaosul" target="_blank" rel="noopener">GitHub</a>
   </div>
 </div></nav>
 
@@ -157,7 +157,7 @@
       <div class="cta">
         <a class="btn" href="#videos">Ver os vídeos</a>
         <a class="btn ghost" href="#motor">Como o motor funciona</a>
-        <a class="btn ghost" href="https://github.com/inematds/expedicaosul" target="_blank" rel="noopener">Código no GitHub</a>
+        <a class="btn ghost" href="https://github.com/linnoff88-dev/expedicaosul" target="_blank" rel="noopener">Código no GitHub</a>
       </div>
     </div>
     <figure><img src="assets/banner.jpg" alt="Banner Expedição Sul: mapa do sul da América do Sul com a rota, a Defender na balsa e os recursos do motor (rota OSRM + balsa OSM, satélite em camadas, relógio único, diário de bordo, casado com a música, 9:16 e 16:9)"></figure>
@@ -316,7 +316,7 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
   <div class="step"><div class="b">1</div><div>
     <h3>Clonar e abrir uma viagem</h3>
     <p>O preview do HyperFrames abre o quadro no navegador, com a timeline para arrastar.</p>
-<pre><span class="k">git clone</span> <span class="s">https://github.com/inematds/expedicaosul</span>
+<pre><span class="k">git clone</span> <span class="s">https://github.com/linnoff88-dev/expedicaosul</span>
 <span class="k">cd</span> expedicaosul/ida-defender
 <span class="k">npm run</span> dev      <span class="c"># = npx hyperframes preview</span></pre>
   </div></div>
@@ -370,7 +370,7 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
     <tr><td>A ida (9:16 + 16:9)</td><td>24,4 min</td><td>6,85</td><td>160</td></tr>
     <tr><td><b>Total</b></td><td><b>~2h03</b></td><td><b>36,22</b></td><td><b>530</b></td></tr>
   </table></div>
-  <div class="note">98–99,5% da entrada veio do cache. A volta pagou a construção do motor genérico; a ida só reaproveitou. Imagem (flux2-klein) e renders (HyperFrames) rodaram local, sem custo. Detalhes no <a href="https://github.com/inematds/expedicaosul#estat%C3%ADsticas-de-produ%C3%A7%C3%A3o" target="_blank" rel="noopener">README</a>.</div>
+  <div class="note">98–99,5% da entrada veio do cache. A volta pagou a construção do motor genérico; a ida só reaproveitou. Imagem (flux2-klein) e renders (HyperFrames) rodaram local, sem custo. Detalhes no <a href="https://github.com/linnoff88-dev/expedicaosul#estat%C3%ADsticas-de-produ%C3%A7%C3%A3o" target="_blank" rel="noopener">README</a>.</div>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
@@ -387,8 +387,8 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
   <div class="wrap">
     <div class="pill">HyperFrames</div><div class="pill">GSAP</div><div class="pill">OpenStreetMap · OSRM</div><div class="pill">Esri World Imagery</div><div class="pill">Claude Code</div>
     <p style="margin-top:18px">Expedição Sul · mapa: Esri, Maxar, Earthstar Geographics · © colaboradores do OpenStreetMap (ODbL) · fotos: Wikimedia Commons (créditos no README) ·
-      <a href="https://github.com/inematds/expedicaosul">inematds/expedicaosul</a> ·
-      <a href="https://inema.club">INEMA.CLUB</a></p>
+      <a href="https://github.com/linnoff88-dev/expedicaosul">linnoff88-dev/expedicaosul</a> ·
+      <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>
 </footer>
 
