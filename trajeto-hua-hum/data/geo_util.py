@@ -1,4 +1,4 @@
-"""Utilidades geográficas compartilhadas: rota OSRM parametrizada por km e projeção Web Mercator."""
+"""Utilidades geográficas compartilhadas: rota OSRM parametrizada por km e projeçêo Web Mercator."""
 import json, math, os, urllib.request, urllib.parse, time
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -35,7 +35,7 @@ def nearest_on_route(pt, coords, cum):
     best = (1e18, 0)
     for i in range(len(coords) - 1):
         a, b = coords[i], coords[i + 1]
-        # projeção local equiretangular
+        # projeçêo local equiretangular
         kx = math.cos(math.radians(pt[1])) * 111320
         ky = 110540
         ax, ay = (a[0] - pt[0]) * kx, (a[1] - pt[1]) * ky

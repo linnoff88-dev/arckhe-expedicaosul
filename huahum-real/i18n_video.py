@@ -1,9 +1,9 @@
-"""Textos do vídeo em EN e ES (tradução revisada à mão, com glossário fixo).
+"""Textos do vídeo em EN e ES (traduçêo revisada à mêo, com glossário fixo).
 
-Nomes próprios ficam como estão: Expedição Sul, San Martín de los Andes, Pirihueico, Lácar, Nonthué,
+Nomes próprios ficam como estêo: Expediçêo Sul, San Martín de los Andes, Pirihueico, Lácar, Nonthué,
 Hua Hum, Quechuquina, Yuco, RP48 / RUTA PROV. 48, CH-203, Taos, Defender 110.
 EN usa ponto decimal (54.3); ES mantém vírgula (uso da Argentina/Chile).
-Cada chave PT é um trecho EXATO do index.html 9:16 — make_lang.py falha se não achar.
+Cada chave PT é um trecho EXATO do index.html 9:16 — make_lang.py falha se nêo achar.
 """
 
 # (pt, en, es) — substituídos em ordem, todas as ocorrências
@@ -60,9 +60,9 @@ PAIRS = [
     # créditos
     ('>CRÉDITOS<', '>CREDITS<', '>CRÉDITOS<'),
     ('>MAPA, DADOS E FOTOS<', '>MAP, DATA AND PHOTOS<', '>MAPA, DATOS Y FOTOS<'),
-    ('<p><b>Nossa aventura:</b> fotos da Expedição Sul, 24 de setembro de 2026.</p>',
-     '<p><b>Our adventure:</b> photos by Expedição Sul, September 24, 2026.</p>',
-     '<p><b>Nuestra aventura:</b> fotos de Expedição Sul, 24 de septiembre de 2026.</p>'),
+    ('<p><b>Nossa aventura:</b> fotos da Expediçêo Sul, 24 de setembro de 2026.</p>',
+     '<p><b>Our adventure:</b> photos by Expediçêo Sul, September 24, 2026.</p>',
+     '<p><b>Nuestra aventura:</b> fotos de Expediçêo Sul, 24 de septiembre de 2026.</p>'),
     ('<p><b>Nosso plano (fotos de referência, Wikimedia Commons):</b>',
      '<p><b>Our plan (reference photos, Wikimedia Commons):</b>',
      '<p><b>Nuestro plan (fotos de referencia, Wikimedia Commons):</b>'),
@@ -70,7 +70,7 @@ PAIRS = [
     ('<p><b>Satélite:</b> Esri World Imagery (Esri, Maxar, Earthstar Geographics) · estrada, ponte, café e fronteira: © colaboradores do OpenStreetMap (ODbL) · rota: OSRM · altitude: SRTM 30 m · fatos: Wikipedia (ES).</p>',
      '<p><b>Satellite:</b> Esri World Imagery (Esri, Maxar, Earthstar Geographics) · road, bridge, café and border: © OpenStreetMap contributors (ODbL) · route: OSRM · elevation: SRTM 30 m · facts: Wikipedia (ES).</p>',
      '<p><b>Satélite:</b> Esri World Imagery (Esri, Maxar, Earthstar Geographics) · ruta, puente, café y frontera: © colaboradores de OpenStreetMap (ODbL) · ruta: OSRM · altitud: SRTM 30 m · datos: Wikipedia (ES).</p>'),
-    ('<p><b>Carros:</b> ilustração gerada por IA (flux2-klein) · <b>Trilhas:</b> geradas por IA (Lyria 3 Pro) · <b>impacto:</b> ElevenLabs SFX.</p>',
+    ('<p><b>Carros:</b> ilustraçêo gerada por IA (flux2-klein) · <b>Trilhas:</b> geradas por IA (Lyria 3 Pro) · <b>impacto:</b> ElevenLabs SFX.</p>',
      '<p><b>Cars:</b> AI-generated illustration (flux2-klein) · <b>Music:</b> AI-generated (Lyria 3 Pro) · <b>impact:</b> ElevenLabs SFX.</p>',
      '<p><b>Autos:</b> ilustración generada por IA (flux2-klein) · <b>Música:</b> generada por IA (Lyria 3 Pro) · <b>impacto:</b> ElevenLabs SFX.</p>'),
 ]

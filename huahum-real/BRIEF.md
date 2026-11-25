@@ -31,4 +31,4 @@ Complemento: "o passo hua hum estava com muitos demoronamentos de pedra tambem p
 
 ## Fotos
 Carrossel contínuo no painel (7,2–84 s). Lista em `data/fotos.txt` → `python3 data/build_fotos.py` → `assets/fotos.js`.
-Fotos da viagem vão em `assets/fotos/`. Espaços sem arquivo aparecem como "SUA FOTO" (rascunho). As do Commons em `assets/photos/` são provisórias.
+Fotos da viagem vêo em `assets/fotos/`. Espaços sem arquivo aparecem como "SUA FOTO" (rascunho). As do Commons em `assets/photos/` sêo provisórias.

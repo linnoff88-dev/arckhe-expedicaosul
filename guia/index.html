@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Expedição Sul — animações de trajeto e o motor de rota</title>
+<title>Expediçêo Sul — animações de trajeto e o motor de rota</title>
 <meta name="description" content="Três viagens de carro pelos Andes, pampa e litoral do Uruguai viraram animações de mapa com satélite real, veículo na estrada verdadeira, HUD e diário de bordo. Veja os 8 vídeos e como o motor de rota (HTML + GSAP + HyperFrames) funciona por dentro.">
 <link rel="alternate" hreflang="pt-BR" href="https://linnoff88-dev.github.io/
 <link rel="alternate" hreflang="en" href="https://linnoff88-dev.github.io/
@@ -128,7 +128,7 @@
 <body>
 
 <nav><div class="wrap">
-  <a class="brand" href="#top"><span class="emoji">🗺️</span> Expedição Sul</a>
+  <a class="brand" href="#top"><span class="emoji">🗺️</span> Expediçêo Sul</a>
   <span class="sep">|</span>
   <span class="clubpro">
     <a class="ARCKHÉ" href="https://ARCKHÉ AI" target="_blank" rel="noopener">ARCKHÉ AI</a>
@@ -160,14 +160,14 @@
         <a class="btn ghost" href="https://github.com/linnoff88-dev/expedicaosul" target="_blank" rel="noopener">Código no GitHub</a>
       </div>
     </div>
-    <figure><img src="assets/banner.jpg" alt="Banner Expedição Sul: mapa do sul da América do Sul com a rota, a Defender na balsa e os recursos do motor (rota OSRM + balsa OSM, satélite em camadas, relógio único, diário de bordo, casado com a música, 9:16 e 16:9)"></figure>
+    <figure><img src="assets/banner.jpg" alt="Banner Expediçêo Sul: mapa do sul da América do Sul com a rota, a Defender na balsa e os recursos do motor (rota OSRM + balsa OSM, satélite em camadas, relógio único, diário de bordo, casado com a música, 9:16 e 16:9)"></figure>
   </div>
 </header>
 
 <section id="videos"><div class="wrap">
   <span class="chip">Os vídeos</span>
   <h2>Três viagens, oito vídeos</h2>
-  <p class="sub">Cada viagem sai em 9:16 (Reels/Shorts/WhatsApp) e 16:9 (YouTube/TV). Os arquivos aqui são a versão web (30 fps); os masters 60 fps ficam fora do git.</p>
+  <p class="sub">Cada viagem sai em 9:16 (Reels/Shorts/WhatsApp) e 16:9 (YouTube/TV). Os arquivos aqui sêo a versêo web (30 fps); os masters 60 fps ficam fora do git.</p>
   <div class="vids">
     <div class="vid">
       <video src="../videos/huahum-plano-e-aventura-16x9.mp4" poster="../videos/huahum-plano-e-aventura-16x9.jpg" controls preload="none" playsinline></video>
@@ -206,11 +206,11 @@
 
 <section id="oque"><div class="wrap">
   <span class="chip">O que é</span>
-  <h2>Um motor de rota, não um editor de vídeo</h2>
-  <p class="sub">Nada aqui foi montado numa timeline à mão. Uma página HTML lê os dados da viagem e desenha cada quadro; o HyperFrames grava essa página como vídeo.</p>
+  <h2>Um motor de rota, nêo um editor de vídeo</h2>
+  <p class="sub">Nada aqui foi montado numa timeline à mêo. Uma página HTML lê os dados da viagem e desenha cada quadro; o HyperFrames grava essa página como vídeo.</p>
   <div class="grid g3">
     <div class="card"><h3>🛰️ Tudo é dado real</h3><p>Estrada do OSRM, balsa e fronteiras do OpenStreetMap, satélite Esri, altitude SRTM, fatos da Wikipedia e fotos do Wikimedia Commons com autor e licença.</p></div>
-    <div class="card"><h3>⏱️ Um relógio só</h3><p>Carro, câmera, linha percorrida, pinos, HUD, trilho de altitude e cards saem da mesma função do tempo. Por isso nada sai de sincronia.</p></div>
+    <div class="card"><h3>⏱️ Um relógio só</h3><p>Carro, câmera, linha percorrida, pinos, HUD, trilho de altitude e cards saem da mesma funçêo do tempo. Por isso nada sai de sincronia.</p></div>
     <div class="card"><h3>🎵 Casado com a música</h3><p>A trilha é analisada (BPM e fase): o carro larga quando a batida entra, a balsa atravessa no trecho calmo e o carimbo de fronteira cai no retorno.</p></div>
   </div>
 </div></section>
@@ -218,7 +218,7 @@
 <section id="motor"><div class="wrap">
   <span class="chip">Como funciona o motor</span>
   <h2>Do link do Google Maps ao MP4</h2>
-  <p class="sub">São duas metades: scripts Python que <b>preparam os dados</b> (rodam uma vez por viagem) e um <code>index.html</code> que <b>desenha o quadro</b> a partir desses dados, para qualquer instante <i>t</i>.</p>
+  <p class="sub">Sêo duas metades: scripts Python que <b>preparam os dados</b> (rodam uma vez por viagem) e um <code>index.html</code> que <b>desenha o quadro</b> a partir desses dados, para qualquer instante <i>t</i>.</p>
   <div class="flow">
     <span>Paradas do link</span><span class="arr">→</span>
     <span>Rota OSRM + balsa OSM</span><span class="arr">→</span>
@@ -236,10 +236,10 @@
     <ol>
       <li><b>Mapa</b>: mosaico de satélite; a câmera segue o carro e muda o zoom sozinha.</li>
       <li><b>Linha âmbar</b>: trecho já percorrido. <b>Pontilhado</b>: o que falta.</li>
-      <li><b>Veículo</b>: sprite visto de cima (gerado no flux2-klein), girado pela direção da estrada.</li>
+      <li><b>Veículo</b>: sprite visto de cima (gerado no flux2-klein), girado pela direçêo da estrada.</li>
       <li><b>HUD</b>: quilômetro atual / total, altitude (SRTM), bandeira do país e nome da estrada (RN22, BR-290…).</li>
       <li><b>Trilho de altitude</b>: o perfil da viagem inteira, com um cursor andando junto.</li>
-      <li><b>Diário de bordo</b>: card com foto, quilômetro e um fato verificado; alguns são cards de dados (gráfico de altitude, contadores).</li>
+      <li><b>Diário de bordo</b>: card com foto, quilômetro e um fato verificado; alguns sêo cards de dados (gráfico de altitude, contadores).</li>
     </ol>
   </div>
 
@@ -248,15 +248,15 @@
   <div class="tw"><table>
     <tr><th>Script</th><th>O que faz</th><th>Sai</th></tr>
     <tr><td><code>build_route2.py trip.json</code></td><td>Junta as pernas do OSRM e a linha da balsa (OSM) numa rota só, com <b>quilômetro cumulativo único</b>. Marca onde a balsa começa/termina e onde está a fronteira (polígono OSM <code>admin_level=2</code>), encaixa cada parada no km certo e busca a altitude a cada 5 km no OpenTopoData (SRTM 30 m). Reamostra a rota a cada 0,15 km em coordenadas Web Mercator z14.</td><td><code>route_full.json</code> → <code>assets/route.js</code></td></tr>
-    <tr><td><code>build_tiles.py</code></td><td>Baixa o satélite Esri em quatro níveis: <code>ov</code> z7 (visão geral), <code>cor</code> z8 (corredor da rota), e para cada parada <code>p10</code> z10 (±1,2°) e <code>p12</code> z12 (±0,3°). Cada nível vira um JPG graduado com sua posição no mundo.</td><td><code>assets/map/*.jpg</code> + <code>assets/layers.js</code></td></tr>
+    <tr><td><code>build_tiles.py</code></td><td>Baixa o satélite Esri em quatro níveis: <code>ov</code> z7 (visêo geral), <code>cor</code> z8 (corredor da rota), e para cada parada <code>p10</code> z10 (±1,2°) e <code>p12</code> z12 (±0,3°). Cada nível vira um JPG graduado com sua posiçêo no mundo.</td><td><code>assets/map/*.jpg</code> + <code>assets/layers.js</code></td></tr>
     <tr><td><code>photos_search.py q.json dir</code></td><td>Procura candidatas no Wikimedia Commons (JPEG, paisagem, ≥ 1400 px) e monta folhas de contato para escolher.</td><td>folhas de contato → <code>picks.json</code></td></tr>
     <tr><td><code>photos_get.py picks.json</code></td><td>Baixa as escolhidas em 1600 px e grava autor, licença e página de cada uma.</td><td><code>assets/photos/</code> + <code>photo_credits.json</code></td></tr>
     <tr><td><code>fetch_facts.py pages.json</code></td><td>Baixa o texto dos verbetes da Wikipedia (ES/PT/EN). Cada frase dos cards sai dali, com a fonte salva.</td><td><code>data/facts/*.json</code></td></tr>
-    <tr><td><code>beat.py música.mp3</code></td><td>Mede BPM e fase da batida e do compasso (fluxo espectral + autocorrelação). É o que diz em que segundo o carro larga e o carimbo cai.</td><td>números para o <code>trip.js</code></td></tr>
+    <tr><td><code>beat.py música.mp3</code></td><td>Mede BPM e fase da batida e do compasso (fluxo espectral + autocorrelaçêo). É o que diz em que segundo o carro larga e o carimbo cai.</td><td>números para o <code>trip.js</code></td></tr>
   </table></div>
 
   <h3 class="sec">3 · Descrever a viagem (<code>assets/trip.js</code>)</h3>
-  <p class="mut">É o roteiro do vídeo, escrito à mão. Diz <b>quando</b> o carro está em cada parada; o motor calcula todo o resto.</p>
+  <p class="mut">É o roteiro do vídeo, escrito à mêo. Diz <b>quando</b> o carro está em cada parada; o motor calcula todo o resto.</p>
 <pre><span class="c">// trecho real de volta-defender/assets/trip.js</span>
 schedule: [
   { id: <span class="s">"sma"</span>,       dep: 9.4,             dwellKm: 42 },  <span class="c">// larga quando o groove entra (9,4 s)</span>
@@ -268,10 +268,10 @@ schedule: [
 ferry:  { dep: 56.2, arr: 64.8 },                         <span class="c">// travessia no trecho calmo da trilha</span>
 stamps: [{ t: 64.8, s1: <span class="s">"ARGENTINA ▸ URUGUAI"</span>, s2: <span class="s">"COLONIA"</span> }, ...],
 cards:  [{ id: <span class="s">"sma"</span>, s: 7.2, e: 13.2, img: <span class="s">"sma"</span>, km: <span class="s">"0"</span>, ttl: <span class="s">"San Martín de los Andes"</span>, body: <span class="s">"..."</span> }, ...]</pre>
-  <p class="mut"><code>arr</code>/<code>dep</code> = segundo em que chega e sai; <code>dwellKm</code> = quantos km cabem na largura do quadro enquanto está parado ali (o zoom da parada). <code>cards</code> têm início e fim (<code>s</code>/<code>e</code>) em segundos; <code>stamps</code> são os carimbos de fronteira.</p>
+  <p class="mut"><code>arr</code>/<code>dep</code> = segundo em que chega e sai; <code>dwellKm</code> = quantos km cabem na largura do quadro enquanto está parado ali (o zoom da parada). <code>cards</code> têm início e fim (<code>s</code>/<code>e</code>) em segundos; <code>stamps</code> sêo os carimbos de fronteira.</p>
 
   <h3 class="sec">4 · Desenhar o quadro (<code>index.html</code>, JS + GSAP)</h3>
-  <p class="mut">Uma única timeline GSAP anima um número, <code>t</code>, de 0 até a duração. A cada mudança chama <code>render()</code>, que calcula tudo do zero para aquele <i>t</i>. O HyperFrames avança o tempo quadro a quadro e grava.</p>
+  <p class="mut">Uma única timeline GSAP anima um número, <code>t</code>, de 0 até a duraçêo. A cada mudança chama <code>render()</code>, que calcula tudo do zero para aquele <i>t</i>. O HyperFrames avança o tempo quadro a quadro e grava.</p>
 <pre><span class="k">tl</span>.to(st, { t: T.dur, duration: T.dur, ease: <span class="s">"none"</span>, onUpdate: render }, 0);
 
 <span class="c">// render(): para o instante t</span>
@@ -280,38 +280,38 @@ km     = <span class="k">progress</span>(t)      <span class="c">// onde o carro
 cam    = <span class="k">camera</span>(t)        <span class="c">// centro + escala do mapa</span>
 <span class="c">// → posiciona camadas de satélite, linha, pinos, rótulos, carro, HUD, trilho</span></pre>
   <div class="grid g2" style="margin-top:16px">
-    <div class="card"><div class="num">t→km</div><h3>Tempo vira quilômetro</h3><p>Entre a saída de uma parada e a chegada na próxima, <code>progress(t)</code> usa um perfil trapezoidal de velocidade: acelera, anda constante, freia. Parado, o km não muda. Como o km é único para a viagem toda, balsa e estrada são o mesmo eixo.</p></div>
-    <div class="card"><div class="num">cam</div><h3>A câmera se dirige sozinha</h3><p>Na parada, o zoom mostra <code>dwellKm</code> de largura. No meio do trecho, abre para ver ~85% dele (curva seno) e olha 20% à frente do carro; na balsa não abre. O vídeo começa na visão geral, mergulha até a largada e, no fim, volta à rota inteira. O zoom é interpolado em escala logarítmica, por isso é suave.</p></div>
-    <div class="card"><div class="num">z7–12</div><h3>Satélite que só aparece inteiro</h3><p>As camadas z7 → z8 → z10 → z12 são empilhadas por detalhe. Uma camada mais nítida só entra quando cobre o quadro inteiro. Assim nunca aparece borda de recorte.</p></div>
-    <div class="card"><div class="num">HUD</div><h3>Mostrador derivado do km</h3><p>País (troca no fim da balsa e na fronteira), estrada (dos passos do OSRM), altitude (SRTM interpolado) e direção do carro saem do mesmo km. Pinos e rótulos têm anti-colisão e somem quando o zoom afasta.</p></div>
+    <div class="card"><div class="num">t→km</div><h3>Tempo vira quilômetro</h3><p>Entre a saída de uma parada e a chegada na próxima, <code>progress(t)</code> usa um perfil trapezoidal de velocidade: acelera, anda constante, freia. Parado, o km nêo muda. Como o km é único para a viagem toda, balsa e estrada sêo o mesmo eixo.</p></div>
+    <div class="card"><div class="num">cam</div><h3>A câmera se dirige sozinha</h3><p>Na parada, o zoom mostra <code>dwellKm</code> de largura. No meio do trecho, abre para ver ~85% dele (curva seno) e olha 20% à frente do carro; na balsa nêo abre. O vídeo começa na visêo geral, mergulha até a largada e, no fim, volta à rota inteira. O zoom é interpolado em escala logarítmica, por isso é suave.</p></div>
+    <div class="card"><div class="num">z7–12</div><h3>Satélite que só aparece inteiro</h3><p>As camadas z7 → z8 → z10 → z12 sêo empilhadas por detalhe. Uma camada mais nítida só entra quando cobre o quadro inteiro. Assim nunca aparece borda de recorte.</p></div>
+    <div class="card"><div class="num">HUD</div><h3>Mostrador derivado do km</h3><p>País (troca no fim da balsa e na fronteira), estrada (dos passos do OSRM), altitude (SRTM interpolado) e direçêo do carro saem do mesmo km. Pinos e rótulos têm anti-colisêo e somem quando o zoom afasta.</p></div>
   </div>
-  <div class="note"><b>Cards e sons</b> não estão no <code>render()</code>: são elementos com <code>data-start</code>/<code>data-duration</code> (trilhas do HyperFrames), gerados a partir de <code>trip.js</code>. A música e os efeitos (whoosh, carimbo, buzina do navio) também têm horário fixo, casado com o <code>beat.py</code>.</div>
+  <div class="note"><b>Cards e sons</b> nêo estêo no <code>render()</code>: sêo elementos com <code>data-start</code>/<code>data-duration</code> (trilhas do HyperFrames), gerados a partir de <code>trip.js</code>. A música e os efeitos (whoosh, carimbo, buzina do navio) também têm horário fixo, casado com o <code>beat.py</code>.</div>
 
   <h3 class="sec">5 · Duas versões do motor</h3>
   <div class="grid g2">
     <div class="card"><h3>v1 · <code>trajeto-hua-hum/</code></h3><p>O primeiro, feito sob medida para 54 km de montanha com dois carros. Scripts próprios (<code>build_route.py</code>, <code>build_map.py</code>, <code>gen_cars.py</code>) e <code>water.py</code>, que repinta os lagos com os polígonos de água do OSM para tirar reflexo do satélite.</p></div>
-    <div class="card"><h3>v2 genérico · <code>volta-defender/</code>, <code>ida-defender/</code></h3><p>Feito para viagens longas: pernas + balsa + fronteira por configuração (<code>trip.json</code>), satélite em camadas por parada. A ida reaproveitou o motor da volta e custou menos da metade.</p></div>
+    <div class="card"><h3>v2 genérico · <code>volta-defender/</code>, <code>ida-defender/</code></h3><p>Feito para viagens longas: pernas + balsa + fronteira por configuraçêo (<code>trip.json</code>), satélite em camadas por parada. A ida reaproveitou o motor da volta e custou menos da metade.</p></div>
   </div>
 
   <h3 class="sec">6 · 9:16 e 16:9 com o mesmo código</h3>
-  <p class="mut">O <code>index.html</code> tem dois blocos marcados, <code>/*LAYOUT-CSS-START*/</code> e <code>/*LAYOUT-JS-START*/</code> (tamanho do quadro, posição dos cards, fontes). <code>make_16x9.py</code> copia o projeto trocando só esses blocos; os assets entram por link simbólico.</p>
+  <p class="mut">O <code>index.html</code> tem dois blocos marcados, <code>/*LAYOUT-CSS-START*/</code> e <code>/*LAYOUT-JS-START*/</code> (tamanho do quadro, posiçêo dos cards, fontes). <code>make_16x9.py</code> copia o projeto trocando só esses blocos; os assets entram por link simbólico.</p>
 </div></section>
 
 <section id="pre"><div class="wrap">
   <span class="chip">Pré-requisitos</span>
   <h2>O que precisa na máquina</h2>
-  <p class="sub">Tudo roda local. As APIs usadas (OSRM, Overpass, OpenTopoData, Esri, Wikipedia, Commons) são abertas e sem chave.</p>
+  <p class="sub">Tudo roda local. As APIs usadas (OSRM, Overpass, OpenTopoData, Esri, Wikipedia, Commons) sêo abertas e sem chave.</p>
   <div class="grid g3">
-    <div class="card"><h3>Node + HyperFrames</h3><p>Para pré-visualizar e renderizar. A versão fica fixada no <code>package.json</code> de cada projeto.</p><pre><span class="k">npx</span> --yes hyperframes@0.8.72 --help</pre></div>
+    <div class="card"><h3>Node + HyperFrames</h3><p>Para pré-visualizar e renderizar. A versêo fica fixada no <code>package.json</code> de cada projeto.</p><pre><span class="k">npx</span> --yes hyperframes@0.8.72 --help</pre></div>
     <div class="card"><h3>Python 3</h3><p>Para os scripts de dados: <code>numpy</code> e <code>Pillow</code>.</p><pre><span class="k">pip install</span> numpy pillow</pre></div>
-    <div class="card"><h3>ffmpeg</h3><p>Usado pelo <code>beat.py</code>, pelo render de compartilhar (−14 LUFS) e pela versão ≤ 44 MB.</p><pre><span class="k">ffmpeg</span> -version</pre></div>
+    <div class="card"><h3>ffmpeg</h3><p>Usado pelo <code>beat.py</code>, pelo render de compartilhar (−14 LUFS) e pela versêo ≤ 44 MB.</p><pre><span class="k">ffmpeg</span> -version</pre></div>
   </div>
 </div></section>
 
 <section id="guia"><div class="wrap">
   <span class="chip">Guia de uso · passo a passo</span>
   <h2>Rodar uma viagem pronta ou fazer uma nova</h2>
-  <p class="sub">Os dados das três viagens já estão no repo. Para ver e renderizar, bastam os passos 1, 5 e 6. Para uma viagem nova, copie <code>ida-defender/</code> e refaça os passos 2 a 4.</p>
+  <p class="sub">Os dados das três viagens já estêo no repo. Para ver e renderizar, bastam os passos 1, 5 e 6. Para uma viagem nova, copie <code>ida-defender/</code> e refaça os passos 2 a 4.</p>
 
   <div class="step"><div class="b">1</div><div>
     <h3>Clonar e abrir uma viagem</h3>
@@ -346,13 +346,13 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
 
   <div class="step"><div class="b">5</div><div>
     <h3>Checar e gerar o 16:9</h3>
-<pre><span class="k">npx</span> hyperframes check                              <span class="c"># sobreposição, texto fora do quadro</span>
+<pre><span class="k">npx</span> hyperframes check                              <span class="c"># sobreposiçêo, texto fora do quadro</span>
 <span class="k">python3</span> make_16x9.py ida-defender ida-defender-16x9</pre>
   </div></div>
 
   <div class="step"><div class="b">6</div><div>
     <h3>Renderizar</h3>
-    <p>Master 60 fps + versão de compartilhar com áudio normalizado; opcionalmente a versão leve para Telegram/web.</p>
+    <p>Master 60 fps + versêo de compartilhar com áudio normalizado; opcionalmente a versêo leve para Telegram/web.</p>
 <pre><span class="k">./render_share.sh</span> ida-defender ida-defender-9x16     <span class="c"># renders/…-60fps.mp4 + …mp4 (−14 LUFS)</span>
 <span class="k">./tg_encode.sh</span> ida-defender/renders/ida-defender-9x16.mp4 videos/ida-defender-9x16.mp4   <span class="c"># ≤ 44 MB</span></pre>
   </div></div>
@@ -361,7 +361,7 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
 <section id="custos"><div class="wrap">
   <span class="chip">Custos medidos</span>
   <h2>Quanto custou fazer</h2>
-  <p class="sub">Medido nos logs da sessão do Claude Code (tokens por chamada), em dólar equivalente de API. Quem usa por assinatura não paga esse valor por uso; serve para comparar.</p>
+  <p class="sub">Medido nos logs da sessêo do Claude Code (tokens por chamada), em dólar equivalente de API. Quem usa por assinatura nêo paga esse valor por uso; serve para comparar.</p>
   <div class="tw"><table>
     <tr><th>Vídeo</th><th>Tempo do agente</th><th>Custo IA (US$)</th><th>Créditos Magnific</th></tr>
     <tr><td>Hua Hum 9:16</td><td>55 min</td><td>13,12</td><td>190</td></tr>
@@ -370,7 +370,7 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
     <tr><td>A ida (9:16 + 16:9)</td><td>24,4 min</td><td>6,85</td><td>160</td></tr>
     <tr><td><b>Total</b></td><td><b>~2h03</b></td><td><b>36,22</b></td><td><b>530</b></td></tr>
   </table></div>
-  <div class="note">98–99,5% da entrada veio do cache. A volta pagou a construção do motor genérico; a ida só reaproveitou. Imagem (flux2-klein) e renders (HyperFrames) rodaram local, sem custo. Detalhes no <a href="https://github.com/linnoff88-dev/expedicaosul#estat%C3%ADsticas-de-produ%C3%A7%C3%A3o" target="_blank" rel="noopener">README</a>.</div>
+  <div class="note">98–99,5% da entrada veio do cache. A volta pagou a construçêo do motor genérico; a ida só reaproveitou. Imagem (flux2-klein) e renders (HyperFrames) rodaram local, sem custo. Detalhes no <a href="https://github.com/linnoff88-dev/expedicaosul#estat%C3%ADsticas-de-produ%C3%A7%C3%A3o" target="_blank" rel="noopener">README</a>.</div>
 </div></section>
 
 <section id="roadmap"><div class="wrap">
@@ -378,15 +378,15 @@ cam    = <span class="k">camera</span>(t)        <span class="c">// centro + esc
   <h2>O que está pronto e o que ainda é manual</h2>
   <p class="sub">Para quem for reaproveitar o motor.</p>
   <div class="phase"><div class="tag">Pronto</div><div class="d"><strong>3 viagens, 8 vídeos</strong><span>Hua Hum (motor v1), a volta e a ida (motor v2 genérico) e “nosso plano × nossa aventura” (3 quadros, fotos da viagem), em 9:16 e 16:9 — este último também em inglês e espanhol.</span></div></div>
-  <div class="phase"><div class="tag">Manual</div><div class="d"><strong>Baixar as pernas OSRM e escrever o trip.js</strong><span>Não há script que leia o link do Google Maps; as pernas e a agenda por parada são montadas à mão (hoje, pelo agente).</span></div></div>
+  <div class="phase"><div class="tag">Manual</div><div class="d"><strong>Baixar as pernas OSRM e escrever o trip.js</strong><span>Nêo há script que leia o link do Google Maps; as pernas e a agenda por parada sêo montadas à mêo (hoje, pelo agente).</span></div></div>
   <div class="phase"><div class="tag">Manual</div><div class="d"><strong>Escolher fotos</strong><span>O script busca e monta folhas de contato; a escolha, conferida por local, vai para o picks.json.</span></div></div>
-  <div class="phase"><div class="tag">Fora do git</div><div class="d"><strong>Masters 60 fps e cache de tiles</strong><span>Os masters (300+ MB) e os caches de satélite/fotos não estão no repositório; o repo leva a versão web.</span></div></div>
+  <div class="phase"><div class="tag">Fora do git</div><div class="d"><strong>Masters 60 fps e cache de tiles</strong><span>Os masters (300+ MB) e os caches de satélite/fotos nêo estêo no repositório; o repo leva a versêo web.</span></div></div>
 </div></section>
 
 <footer>
   <div class="wrap">
     <div class="pill">HyperFrames</div><div class="pill">GSAP</div><div class="pill">OpenStreetMap · OSRM</div><div class="pill">Esri World Imagery</div><div class="pill">Claude Code</div>
-    <p style="margin-top:18px">Expedição Sul · mapa: Esri, Maxar, Earthstar Geographics · © colaboradores do OpenStreetMap (ODbL) · fotos: Wikimedia Commons (créditos no README) ·
+    <p style="margin-top:18px">Expediçêo Sul · mapa: Esri, Maxar, Earthstar Geographics · © colaboradores do OpenStreetMap (ODbL) · fotos: Wikimedia Commons (créditos no README) ·
       <a href="https://github.com/linnoff88-dev/expedicaosul">linnoff88-dev/expedicaosul</a> ·
       <a href="https://ARCKHÉ AI">ARCKHÉ AI</a></p>
   </div>

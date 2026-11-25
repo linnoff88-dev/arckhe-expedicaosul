@@ -305,7 +305,7 @@
       <!-- BARRA SUPERIOR -->
       <div id="topbar">
         <div id="sec">NOSSO PLANO</div>
-        <div id="tright"><div class="name">EXPEDIÇÃO SUL · HUA HUM</div><div id="coords">40°09′S · 71°21′W</div></div>
+        <div id="tright"><div class="name">EXPEDIÇêO SUL · HUA HUM</div><div id="coords">40°09′S · 71°21′W</div></div>
       </div>
 
       <!-- QUADRO 1: MAPA GERAL (fixo — os dois carros sempre visíveis) -->
@@ -398,7 +398,7 @@
         </div>
 
         <div id="intro-title">
-          <div class="k" id="it-k">EXPEDIÇÃO SUL · SAN MARTÍN DE LOS ANDES</div>
+          <div class="k" id="it-k">EXPEDIÇêO SUL · SAN MARTÍN DE LOS ANDES</div>
           <h1><span class="ln"><span id="it-1">A travessia</span></span><span class="ln"><span id="it-2">dos Andes</span></span><span class="ln"><span id="it-3"><span class="arrow">▸</span> Hua Hum</span></span></h1>
         </div>
         <div class="mtitle" id="end1"><div class="k">SAN MARTÍN ▸ PIRIHUEICO · 54,3 KM</div><h1>Esse era o nosso plano.</h1></div>
@@ -439,7 +439,7 @@
       <!-- CARTAZES GRANDES -->
       <section class="big clip" data-layout-allow-overlap id="big-plan" data-start="0" data-duration="3.4" data-track-index="6">
         <img class="bgimg" src="assets/photos/lacar.jpg" alt="" /><div class="veil"></div>
-        <div class="k" data-layout-allow-overlap>EXPEDIÇÃO SUL · HUA HUM</div>
+        <div class="k" data-layout-allow-overlap>EXPEDIÇêO SUL · HUA HUM</div>
         <h1 data-layout-allow-overlap><span>NOSSO</span><span class="l2">PLANO</span></h1>
         <div class="rule"></div>
         <div class="sub">SAN MARTÍN ▸ PIRIHUEICO · 54,3 KM</div>
@@ -507,7 +507,7 @@
       const DSEG = [[43.2, 48.0, P0, WP.lacar.km], [55.2, 62.4, WP.lacar.km, WP.ripio.km], [69.6, 74.4, WP.ripio.km, WP.yuco.km],
         [76.8, 79.2, WP.yuco.km, KC], [86.4, 88.8, KC, KX], [100.8, 108.0, KX, WP.huahum.km], [122.4, 124.8, WP.huahum.km, KP], [135.6, T_END_DRIVE, KP, P0]];
       const T_ALERT = 88.8, T_SPLIT = 98.4, T_POLICE = 124.8, T_CLOSED = 127.2;
-      const UT_T = [98.4, 99.6], UT_D = [134.4, 135.6]; // meia-volta (rotação 180°)
+      const UT_T = [98.4, 99.6], UT_D = [134.4, 135.6]; // meia-volta (rotaçêo 180°)
       function track(segs, t) {
         let km = segs[0][2], dir = Math.sign(segs[0][3] - segs[0][2]);
         for (const [t0, t1, a, b] of segs) {
@@ -547,7 +547,7 @@
         return { d: { km: d.km, dir: d.dir, turn: dTurn }, t: tk, drawn: max, max };
       }
 
-      // câmera do mapa detalhado: abertura ampla → segue o plano → visão geral → segue a aventura → visão geral
+      // câmera do mapa detalhado: abertura ampla → segue o plano → visêo geral → segue a aventura → visêo geral
       const CA = world(-71.70, -39.84), CB = world(-71.57, -39.90);
       const SA = 0.040, SB = 0.05;
       let minx = 1e12, maxx = -1e12, miny = 1e12, maxy = -1e12;
@@ -727,7 +727,7 @@
         { id: "b5", s: 69.6, e: 76.8, kick: "KM 27,1 · 13H02", ttl: "Yuco", body: "Área recreativa do <em>Parque Nacional Lanín</em>, na margem do Lácar." },
         { id: "b6", s: 76.8, e: 88.8, kick: "KM 31,7 · 13H07", ttl: "Café Quechuquina", body: "Parada na margem do Lácar, na altura do café. Logo depois vem a primeira curva." },
         { id: "b7", s: 88.8, e: 98.4, kick: "KM 32,1 · 13H21", ttl: "Estrada interrompida", body: "<em>Árvores caídas</em> e <em>água transbordando</em> sobre a pista. Polícia e brigadistas no local." },
-        { id: "b8", s: 98.4, e: 108.0, kick: "KM 32,1 · A DECISÃO", ttl: "O Taos volta", body: "O Taos retorna a San Martín. A <em>Defender 110</em> passa pela água e segue rumo a Hua Hum." },
+        { id: "b8", s: 98.4, e: 108.0, kick: "KM 32,1 · A DECISêO", ttl: "O Taos volta", body: "O Taos retorna a San Martín. A <em>Defender 110</em> passa pela água e segue rumo a Hua Hum." },
         { id: "b9", s: 108.0, e: 115.2, kick: "KM 41,3 · 13H45", ttl: "Puerto Hua Hum", body: "A Defender chega sozinha ao fim do Lago Nonthué, onde nasce o Río Hua Hum." },
         { id: "b10", s: 115.2, e: 122.4, kick: "PUERTO HUA HUM", ttl: "Cauquenes e periquitos", body: "Pausa na beira do lago antes da fronteira." },
         { id: "b11", s: 122.4, e: 127.2, kick: "KM 42,5 · PONTE DO RÍO HUA HUM", ttl: "Polícia na ponte", body: "Barreira policial na ponte, <em>1,2 km</em> antes da fronteira." },
@@ -760,10 +760,10 @@
       cred.innerHTML = `<div class="inner"><div class="col">
         <div class="kick" style="position:static">CRÉDITOS</div>
         <h3 style="margin-top:14px">MAPA, DADOS E FOTOS</h3>
-        <p><b>Nossa aventura:</b> fotos da Expedição Sul, 24 de setembro de 2026.</p>
+        <p><b>Nossa aventura:</b> fotos da Expediçêo Sul, 24 de setembro de 2026.</p>
         <p><b>Nosso plano (fotos de referência, Wikimedia Commons):</b> Albasmalko (domínio público; CC BY-SA 3.0) · Marco Antonio Correa Flores (CC BY-SA 4.0) · Falk2 (CC BY-SA 4.0) · Gervacio Rosales (CC BY 3.0) · Manueldutruel (CC BY-SA 4.0).</p>
         <p><b>Satélite:</b> Esri World Imagery (Esri, Maxar, Earthstar Geographics) · estrada, ponte, café e fronteira: © colaboradores do OpenStreetMap (ODbL) · rota: OSRM · altitude: SRTM 30 m · fatos: Wikipedia (ES).</p>
-        <p><b>Carros:</b> ilustração gerada por IA (flux2-klein) · <b>Trilhas:</b> geradas por IA (Lyria 3 Pro) · <b>impacto:</b> ElevenLabs SFX.</p>
+        <p><b>Carros:</b> ilustraçêo gerada por IA (flux2-klein) · <b>Trilhas:</b> geradas por IA (Lyria 3 Pro) · <b>impacto:</b> ElevenLabs SFX.</p>
       </div></div>`;
       host.appendChild(cred);
 

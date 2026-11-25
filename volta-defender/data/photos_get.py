@@ -1,4 +1,4 @@
-"""Baixa fotos escolhidas (1920px padrão -> 1600px) e grava créditos. Uso: python3 photos_get.py picks.json <assets_dir>
+"""Baixa fotos escolhidas (1920px padrêo -> 1600px) e grava créditos. Uso: python3 photos_get.py picks.json <assets_dir>
 picks.json: {"chave_saida": ["pasta_cand", "categoria", indice], ...}"""
 import json, sys, os, re, time
 from geo_util import get

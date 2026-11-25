@@ -1,4 +1,4 @@
-// Gerado por data/build_fotos.py a partir de data/fotos.txt — não editar à mão.
+// Gerado por data/build_fotos.py a partir de data/fotos.txt — nêo editar à mêo.
 window.FOTOS = [
  {
   "at": 7.2,

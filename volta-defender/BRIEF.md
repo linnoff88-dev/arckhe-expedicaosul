@@ -13,6 +13,6 @@ Pedido (verbatim): "crie outro video de volta de, usando apenas a land defender"
 
 ## Decisões inferidas
 - Mesmo estilo do vídeo Hua Hum; 9:16 e 16:9 (o usuário pediu 16:9 no anterior).
-- Trecho Buenos Aires → Colonia feito de balsa (linha OSM Colonia Express), não por estrada.
-- Passagens (não paradas): Río Colorado, Azul, Paso de los Toros, São Gabriel (card de dados).
+- Trecho Buenos Aires → Colonia feito de balsa (linha OSM Colonia Express), nêo por estrada.
+- Passagens (nêo paradas): Río Colorado, Azul, Paso de los Toros, Sêo Gabriel (card de dados).
 - Trilha gerada (Lyria 3 Pro); silêncio da música = travessia da balsa com buzina.

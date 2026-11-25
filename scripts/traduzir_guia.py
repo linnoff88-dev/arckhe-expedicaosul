@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 """Gera guia/en, guia/es e README.en/es.md a partir das fontes em PT.
 
-Uso:  python3 scripts/traduzir_guia.py            (traduz só o que não está no cache)
-      python3 scripts/traduzir_guia.py --offline  (só monta a partir do cache; falha se faltar tradução)
+Uso:  python3 scripts/traduzir_guia.py            (traduz só o que nêo está no cache)
+      python3 scripts/traduzir_guia.py --offline  (só monta a partir do cache; falha se faltar traduçêo)
 
 - Extrai unidades de texto visíveis (título, meta description, alt, aria-label, title,
   parágrafos, células, legendas...) do guia/index.html e as linhas de prosa do README.md.
-- Marcação inline e <code> viram placeholders ⟪P0⟫; <pre>, <script>, <style> nunca vão ao modelo.
+- Marcaçêo inline e <code> viram placeholders ⟪P0⟫; <pre>, <script>, <style> nunca vêo ao modelo.
 - Traduz em lotes JSON id→texto via OpenRouter (openai/gpt-5.4-nano), valida ids e
   placeholders, refaz só o lote que falhar (máx. 2 tentativas extras).
 - Cache: i18n/source/pt.json, i18n/translations/{en,es}.json, i18n/glossary.json,
@@ -21,7 +21,7 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 I18N = ROOT / 'i18n'
 MODEL = 'openai/gpt-5.4-nano'
-PRICE = {'prompt': 0.20e-6, 'completion': 1.25e-6}  # USD/token (tabela 19/09/2026), só se a API não informar custo
+PRICE = {'prompt': 0.20e-6, 'completion': 1.25e-6}  # USD/token (tabela 19/09/2026), só se a API nêo informar custo
 LANGS = {'en': 'English', 'es': 'Spanish (neutral Latin American)'}
 HTML_LANG = {'pt': 'pt-BR', 'en': 'en', 'es': 'es'}
 SITE = 'https://linnoff88-dev.github.io/
@@ -30,7 +30,7 @@ PH = re.compile(r'⟪P\d+⟫')
 LETTER = re.compile(r'[A-Za-zÀ-ÿ]')
 
 GLOSSARY = {
-    'keep_literal': ['Expedição Sul', 'Hua Hum', 'Paso Hua Hum', 'San Martín de los Andes', 'Pirihueico',
+    'keep_literal': ['Expediçêo Sul', 'Hua Hum', 'Paso Hua Hum', 'San Martín de los Andes', 'Pirihueico',
                      'Lago Lácar', 'RP48', 'Ruta Provincial 48', 'CH-203', 'Defender 110', 'Taos', 'Tucson',
                      'HyperFrames', 'GSAP', 'OSRM', 'OSM', 'Esri', 'SRTM', 'Lyria', 'flux2-klein', 'trip.js',
                      'Claude Code', 'ARCKHÉ', 'ARCKHÉ AI', 'PRO', 'HUD', 'cam', 't→km', 'z7–12', 'Magnific',
@@ -74,7 +74,7 @@ GLOSSARY = {
 }
 
 PROMPT = '''You are a professional technical translator. Translate Brazilian Portuguese into {lang}.
-Content: a landing page + usage guide for "Expedição Sul", an open-source project that turns real road trips into animated satellite-map videos (route engine in HTML + GSAP rendered by HyperFrames).
+Content: a landing page + usage guide for "Expediçêo Sul", an open-source project that turns real road trips into animated satellite-map videos (route engine in HTML + GSAP rendered by HyperFrames).
 Rules:
 - Preserve meaning, negations, numbers, measured vs estimated figures. Never summarize, never add claims.
 - Keep EXACTLY every placeholder like ⟪P0⟫ ⟪P1⟫ (they encode inline markup/code); keep them in the grammatically right position, never drop or duplicate them.
@@ -92,12 +92,12 @@ NUMBERS = {
     'es': '- Keep the Portuguese number format exactly (54,3 km; 2.797 km; 13,12). "383 mil" stays "383 mil".',
 }
 
-# ---------------------------------------------------------------- extração
+# ---------------------------------------------------------------- extraçêo
 
 class Units:
     def __init__(self):
         self.src = {}      # key -> texto PT (com placeholders)
-        self.apply = []    # (key, função que recebe a tradução)
+        self.apply = []    # (key, funçêo que recebe a traduçêo)
 
     def add(self, text, setter, markup=False, extra_mask=None):
         if not text or not LETTER.search(html.unescape(text)):
@@ -186,7 +186,7 @@ def md_units(text, U):
     flush()
     return out  # linhas absorvidas por um parágrafo viram None depois do apply()
 
-# ---------------------------------------------------------------- tradução
+# ---------------------------------------------------------------- traduçêo
 
 def api_key():
     for f in [Path.home() / 'projetos/wifi/.env', Path.home() / 'projetos/openpcbotv2/.env']:
@@ -195,7 +195,7 @@ def api_key():
                 m = re.match(r'\s*(?:export\s+)?OPENROUTER_API_KEY\s*=\s*["\']?([^"\'\s#]+)', line)
                 if m:
                     return m.group(1)
-    raise SystemExit('OPENROUTER_API_KEY não encontrada em ~/projetos/wifi/.env nem ~/projetos/openpcbotv2/.env')
+    raise SystemExit('OPENROUTER_API_KEY nêo encontrada em ~/projetos/wifi/.env nem ~/projetos/openpcbotv2/.env')
 
 
 def bad_items(items, out):
@@ -239,15 +239,15 @@ def call(items, locale, key, stage):
         return {}
 
 
-# Revisão humana/agente depois da leitura das saídas: o nano nem sempre respeitou o glossário.
-# Aplicada ao cache (memória de tradução) a cada execução; substituições idempotentes.
+# Revisêo humana/agente depois da leitura das saídas: o nano nem sempre respeitou o glossário.
+# Aplicada ao cache (memória de traduçêo) a cada execuçêo; substituições idempotentes.
 REVIEW = {
     'en': [('Each trip releases in', 'Each trip comes out in'), ('and a ⟪P2⟫ that', 'and an ⟪P2⟫ that'),
            ('on 09/24/2026', 'on September 24, 2026'), ('0,20 read', '0.20 read'), ('0,10 /', '0.10 /'),
            ('⟪P3⟫ has start and end', '⟪P3⟫ have start and end'),
            ('Río Colorado on\nMay 25', 'Río Colorado in\n25 de Mayo'), ('the RP48 of gravel road', 'the RP48 gravel road'),
            ('Three road-trip drives', 'Three road trips'), ('16:9 almost doesn’t cost', '16:9 costs almost nothing')],
-    'es': [('Expedición Sur', 'Expedição Sul'), ('piernas', 'tramos'), ('Pernas', 'Tramos'), ('cada perna', 'cada tramo'),
+    'es': [('Expedición Sur', 'Expediçêo Sul'), ('piernas', 'tramos'), ('Pernas', 'Tramos'), ('cada perna', 'cada tramo'),
            ('carimbo en el retorno', 'sello de frontera en el retorno'), ('carimbos', 'sellos de frontera'),
            ('(whoosh, carimbo, buzina de navio)', '(whoosh, sello, bocina de barco)'),
            ('| Trilhas |', '| Pistas musicales |'), ('3 trilhas ×', '3 pistas musicales ×'),
@@ -275,7 +275,7 @@ def translate(src, locale, cache, offline):
 def _translate(src, locale, cache, offline):
     todo = {k: v for k, v in src.items() if k not in cache}
     if todo and offline:
-        raise SystemExit(f'{locale}: {len(todo)} unidades sem tradução no cache (rode sem --offline)')
+        raise SystemExit(f'{locale}: {len(todo)} unidades sem traduçêo no cache (rode sem --offline)')
     if not todo:
         return
     key = api_key(); batches = []; cur = {}; size = 0
@@ -309,7 +309,7 @@ def save(p, obj):
 
 
 def fix_number_cells(soup):
-    """Células só com números (não passam pelo modelo) -> formato inglês."""
+    """Células só com números (nêo passam pelo modelo) -> formato inglês."""
     pat = re.compile(r'^(~?)(\d{1,3}(?:\.\d{3})*)(,\d+)?(\s?(?:min|s|km))?$')
     for node in soup.find_all(string=True):
         if node.find_parent(['pre', 'code', 'script', 'style']) or not node.find_parent(['td', 'b']):

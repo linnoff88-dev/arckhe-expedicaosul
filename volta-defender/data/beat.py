@@ -1,4 +1,4 @@
-"""Estimativa de BPM e fase por fluxo espectral + pente de autocorrelação."""
+"""Estimativa de BPM e fase por fluxo espectral + pente de autocorrelaçêo."""
 import numpy as np, subprocess, sys
 f=sys.argv[1]; t0=float(sys.argv[2]) if len(sys.argv)>2 else 12; t1=float(sys.argv[3]) if len(sys.argv)>3 else 55
 raw=subprocess.run(['ffmpeg','-loglevel','error','-i',f,'-ac','1','-ar','22050','-f','s16le','-'],capture_output=True).stdout

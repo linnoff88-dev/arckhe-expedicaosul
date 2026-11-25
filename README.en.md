@@ -1,8 +1,8 @@
 [PT](README.md) · **EN** · [ES](README.es.md)
 
-# Expedição Sul — route animations
+# Expediçêo Sul — route animations
 
-[![Expedição Sul](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
+[![Expediçêo Sul](guia/assets/banner.jpg)](https://linnoff88-dev.github.io/
 
 Three road trips across the Andes, the pampas, and Uruguay’s coast—turned into **map animations**:
 real satellite, the vehicle moving on the actual road, a dashboard with km, altitude, country, and road, and underneath
@@ -84,9 +84,9 @@ volta-defender-16x9/    variante 16:9 (assets por link simbólico)
 ida-defender/           mesmo motor + assets/trip.js da ida
 ida-defender-16x9/
 make_16x9.py            gera a variante 16:9 trocando só os blocos de layout
-render_share.sh         render 60 fps + versão de compartilhar (-14 LUFS)
-tg_encode.sh            versão ≤ 44 MB (Telegram / web)
-videos/                 os 8 vídeos (versão web) + capas
+render_share.sh         render 60 fps + versêo de compartilhar (-14 LUFS)
+tg_encode.sh            versêo ≤ 44 MB (Telegram / web)
+videos/                 os 8 vídeos (versêo web) + capas
 FALHAS.md               changelog de falhas corrigidas
 ```
 

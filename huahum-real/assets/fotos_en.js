@@ -1,4 +1,4 @@
-// Gerado por make_lang.py en — não editar à mão.
+// Gerado por make_lang.py en — nêo editar à mêo.
 window.FOTOS = [
  {
   "at": 7.2,

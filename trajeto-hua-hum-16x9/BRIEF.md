@@ -11,23 +11,23 @@ destination: redes sociais / WhatsApp (vertical)
 
 ## Intent
 
-Pedido do usuário (verbatim): "quero que faca uma animação incrivel deste trajeto colocando imagens mostrando em um quadro o trajeto de dois carros andando e abaixo texto animacao e imagens de onde passamos, faca melhor q um profissional possa fazer. o carro é hunday tucson e uma defender 110 branca" + link do Google Maps (-40.1634936,-71.3558054 → Pirihueico, Panguipulli).
+Pedido do usuário (verbatim): "quero que faca uma animaçêo incrivel deste trajeto colocando imagens mostrando em um quadro o trajeto de dois carros andando e abaixo texto animacao e imagens de onde passamos, faca melhor q um profissional possa fazer. o carro é hunday tucson e uma defender 110 branca" + link do Google Maps (-40.1634936,-71.3558054 → Pirihueico, Panguipulli).
 
-Conceito: **diário de bordo de expedição** — o mapa de satélite é o instrumento ao vivo (quadro superior, HUD com km, altitude, estrada, país), e o painel inferior é o diário que registra cada lugar quando o comboio passa (foto real + km + fato verificado).
+Conceito: **diário de bordo de expediçêo** — o mapa de satélite é o instrumento ao vivo (quadro superior, HUD com km, altitude, estrada, país), e o painel inferior é o diário que registra cada lugar quando o comboio passa (foto real + km + fato verificado).
 
 ## Decisões — respondidas pelo usuário
 - Trajeto: link do Google Maps (origem/destino).
 - Carros: Hyundai Tucson + Land Rover Defender 110 branca.
-- Layout: quadro com o trajeto e os dois carros; abaixo texto, animação e imagens dos lugares.
+- Layout: quadro com o trajeto e os dois carros; abaixo texto, animaçêo e imagens dos lugares.
 
 ## Decisões — inferidas (corrigir aqui)
 - Formato 9:16 1080×1920, 60 fps (o layout "mapa em cima / diário embaixo" encaixa no vertical).
-- Cor do Tucson: prata/cinza (não informada). Defender: geração nova (L663) — não informado se é a clássica.
-- Carros no mapa são sprites vistos de cima gerados no flux2-klein (não fotos dos carros reais).
+- Cor do Tucson: prata/cinza (nêo informada). Defender: geraçêo nova (L663) — nêo informado se é a clássica.
+- Carros no mapa sêo sprites vistos de cima gerados no flux2-klein (nêo fotos dos carros reais).
 - Fotos dos lugares: Wikimedia Commons (licenças livres, créditos no fim).
 - Fatos: Wikipedia ES + OSM + SRTM, salvos em `data/`.
 - Trilha: gerada (Magnific / Lyria 3 Pro), instrumental; SFX: whoosh + carimbo na fronteira.
-- Sem narração.
+- Sem narraçêo.
 
 ## Assets
 - Rota: OSRM (`data/osrm.json`), POIs OSM (`data/overpass_pois.json`), altimetria SRTM30m (`data/elev.json`), fronteira OSM admin_level=2 (`data/border_osm.json`).

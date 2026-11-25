@@ -200,7 +200,7 @@
 
       <!-- BARRA SUPERIOR -->
       <div id="topbar">
-        <div id="brand"><div class="dot"></div><div class="name">EXPEDIÇÃO SUL</div><div class="sub" id="brand-sub">ARGENTINA ▸ CHILE</div></div>
+        <div id="brand"><div class="dot"></div><div class="name">EXPEDIÇêO SUL</div><div class="sub" id="brand-sub">ARGENTINA ▸ CHILE</div></div>
         <div id="coords">40°09′S · 71°21′W</div>
       </div>
 
@@ -391,8 +391,8 @@
       const SO = 0.95 * Math.min(FW / ((maxx - minx) * 1.2), FH / ((maxy - miny) * 2.6));
       const CO = [(minx + maxx) / 2, (miny + maxy) / 2 - 130 / SO];
       function zoomTo(a, b, e) {
-        // interpolação log de escala + zoom em torno do alvo
-        // o alvo desliza em espaço de tela até o centro enquanto a escala cresce (sem puxão no fim)
+        // interpolaçêo log de escala + zoom em torno do alvo
+        // o alvo desliza em espaço de tela até o centro enquanto a escala cresce (sem puxêo no fim)
         const S = Math.exp(lerp(Math.log(a.S), Math.log(b.S), e));
         const k = (1 - eio(e)) * a.S / S;
         return { cx: b.cx - (b.cx - a.cx) * k, cy: b.cy - (b.cy - a.cy) * k, S };
@@ -442,7 +442,7 @@
       addLabel("SAN MARTÍN DE LOS ANDES", WP.sma.x, WP.sma.y, "city", 24, [0, 0.12], "b");
       addLabel("PIRIHUEICO ●", WP.pirehueico.x, WP.pirehueico.y, "city", 24, [0, 0.12], "r");
 
-      // pinos (lado do rótulo na visão geral: [dx, dy])
+      // pinos (lado do rótulo na visêo geral: [dx, dy])
       const SHORT = { sma: "SAN MARTÍN", lacar: "MIRADOR", ripio: "ALTO RP48", yuco: "YUCO", nonthue: "NONTHUÉ", huahum: "PUERTO HUA HUM", border: "PASO HUA HUM", pirehueico: "PIREHUEICO" };
       const PIN_SIDE = { sma: [-18, 30, "r"], lacar: [-18, -34, "r"], ripio: [18, -34, "l"], yuco: [-18, 30, "r"], nonthue: [-20, 0, "r"], huahum: [18, 34, "l"], border: [18, -34, "l"], pirehueico: [18, -34, "l"] };
       const PINS = R.waypoints.map((w) => {
@@ -506,7 +506,7 @@
         <h3 style="margin-top:14px">MAPA, DADOS E FOTOS</h3>
         <p><b>Satélite:</b> Esri World Imagery (Esri, Maxar, Earthstar Geographics) · lagos e fronteira: © colaboradores do OpenStreetMap (ODbL) · limites amplos: Natural Earth · rota: OSRM · altitude: SRTM 30 m via OpenTopoData · fatos: Wikipedia (ES).</p>
         <p><b>Fotos (Wikimedia Commons):</b> Albasmalko (domínio público; CC BY-SA 3.0) · Marco Antonio Correa Flores (CC BY-SA 4.0) · Falk2 (CC BY-SA 4.0) · Gervacio Rosales (CC BY 3.0) · Manueldutruel (CC BY-SA 4.0).</p>
-        <p><b>Carros:</b> ilustração gerada por IA (flux2-klein) · <b>Trilha:</b> gerada por IA (Lyria 3 Pro).</p>
+        <p><b>Carros:</b> ilustraçêo gerada por IA (flux2-klein) · <b>Trilha:</b> gerada por IA (Lyria 3 Pro).</p>
       </div></div>`;
       host.appendChild(cred);
 

@@ -306,7 +306,7 @@
       <!-- BARRA SUPERIOR -->
       <div id="topbar">
         <div id="sec">NUESTRO PLAN</div>
-        <div id="tright"><div class="name">EXPEDIÇÃO SUL · HUA HUM</div><div id="coords">40°09′S · 71°21′W</div></div>
+        <div id="tright"><div class="name">EXPEDIÇêO SUL · HUA HUM</div><div id="coords">40°09′S · 71°21′W</div></div>
       </div>
 
       <!-- QUADRO 1: MAPA GERAL (fixo — os dois carros sempre visíveis) -->
@@ -399,7 +399,7 @@
         </div>
 
         <div id="intro-title">
-          <div class="k" id="it-k">EXPEDIÇÃO SUL · SAN MARTÍN DE LOS ANDES</div>
+          <div class="k" id="it-k">EXPEDIÇêO SUL · SAN MARTÍN DE LOS ANDES</div>
           <h1><span class="ln"><span id="it-1">La travesía</span></span><span class="ln"><span id="it-2">de los Andes</span></span><span class="ln"><span id="it-3"><span class="arrow">▸</span> Hua Hum</span></span></h1>
         </div>
         <div class="mtitle" id="end1"><div class="k">SAN MARTÍN ▸ PIRIHUEICO · 54,3 KM</div><h1>Ese era nuestro plan.</h1></div>
@@ -440,7 +440,7 @@
       <!-- CARTAZES GRANDES -->
       <section class="big clip" data-layout-allow-overlap id="big-plan" data-start="0" data-duration="3.4" data-track-index="6">
         <img class="bgimg" src="assets/photos/lacar.jpg" alt="" /><div class="veil"></div>
-        <div class="k" data-layout-allow-overlap>EXPEDIÇÃO SUL · HUA HUM</div>
+        <div class="k" data-layout-allow-overlap>EXPEDIÇêO SUL · HUA HUM</div>
         <h1 data-layout-allow-overlap><span>NUESTRO</span><span class="l2">PLAN</span></h1>
         <div class="rule"></div>
         <div class="sub">SAN MARTÍN ▸ PIRIHUEICO · 54,3 KM</div>
@@ -508,7 +508,7 @@
       const DSEG = [[43.2, 48.0, P0, WP.lacar.km], [55.2, 62.4, WP.lacar.km, WP.ripio.km], [69.6, 74.4, WP.ripio.km, WP.yuco.km],
         [76.8, 79.2, WP.yuco.km, KC], [86.4, 88.8, KC, KX], [100.8, 108.0, KX, WP.huahum.km], [122.4, 124.8, WP.huahum.km, KP], [135.6, T_END_DRIVE, KP, P0]];
       const T_ALERT = 88.8, T_SPLIT = 98.4, T_POLICE = 124.8, T_CLOSED = 127.2;
-      const UT_T = [98.4, 99.6], UT_D = [134.4, 135.6]; // meia-volta (rotação 180°)
+      const UT_T = [98.4, 99.6], UT_D = [134.4, 135.6]; // meia-volta (rotaçêo 180°)
       function track(segs, t) {
         let km = segs[0][2], dir = Math.sign(segs[0][3] - segs[0][2]);
         for (const [t0, t1, a, b] of segs) {
@@ -548,7 +548,7 @@
         return { d: { km: d.km, dir: d.dir, turn: dTurn }, t: tk, drawn: max, max };
       }
 
-      // câmera do mapa detalhado: abertura ampla → segue o plano → visão geral → segue a aventura → visão geral
+      // câmera do mapa detalhado: abertura ampla → segue o plano → visêo geral → segue a aventura → visêo geral
       const CA = world(-71.70, -39.84), CB = world(-71.57, -39.90);
       const SA = 0.040, SB = 0.05;
       let minx = 1e12, maxx = -1e12, miny = 1e12, maxy = -1e12;
@@ -761,7 +761,7 @@
       cred.innerHTML = `<div class="inner"><div class="col">
         <div class="kick" style="position:static">CRÉDITOS</div>
         <h3 style="margin-top:14px">MAPA, DATOS Y FOTOS</h3>
-        <p><b>Nuestra aventura:</b> fotos de Expedição Sul, 24 de septiembre de 2026.</p>
+        <p><b>Nuestra aventura:</b> fotos de Expediçêo Sul, 24 de septiembre de 2026.</p>
         <p><b>Nuestro plan (fotos de referencia, Wikimedia Commons):</b> Albasmalko (dominio público; CC BY-SA 3.0) · Marco Antonio Correa Flores (CC BY-SA 4.0) · Falk2 (CC BY-SA 4.0) · Gervacio Rosales (CC BY 3.0) · Manueldutruel (CC BY-SA 4.0).</p>
         <p><b>Satélite:</b> Esri World Imagery (Esri, Maxar, Earthstar Geographics) · ruta, puente, café y frontera: © colaboradores de OpenStreetMap (ODbL) · ruta: OSRM · altitud: SRTM 30 m · datos: Wikipedia (ES).</p>
         <p><b>Autos:</b> ilustración generada por IA (flux2-klein) · <b>Música:</b> generada por IA (Lyria 3 Pro) · <b>impacto:</b> ElevenLabs SFX.</p>

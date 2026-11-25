@@ -88,7 +88,7 @@ for name, m in L.items():
     water = water + (lum - blur) * 0.10
     a = (cv2.GaussianBlur(mask, (0, 0), 0.8).astype(np.float32) / 255)[..., None]
     out = im * (1 - a) + water * a
-    # grade de terra: leve dessaturação, contraste e tom quente nas altas
+    # grade de terra: leve dessaturaçêo, contraste e tom quente nas altas
     g = out / 255
     lumg = g.mean(axis=2, keepdims=True)
     g = lumg + (g - lumg) * 0.82

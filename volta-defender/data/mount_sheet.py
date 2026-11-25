@@ -34,7 +34,7 @@ for i, img in enumerate(resized):
     sheet.paste(rgb_img, (x_pos, 0))
     x_pos += widths[i] + margin
 
-# Criar pasta qa se não existir
+# Criar pasta qa se nêo existir
 qa_dir = '/home/nmaldaner/projetos/expedicaosul/volta-defender/data/qa'
 os.makedirs(qa_dir, exist_ok=True)
 

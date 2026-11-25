@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Uso: tg_encode.sh <entrada.mp4> <saida.mp4>  -> versão ≤ ~44 MB para o Telegram (30 fps, 2 passadas, bitrate pela duração)
+# Uso: tg_encode.sh <entrada.mp4> <saida.mp4>  -> versêo ≤ ~44 MB para o Telegram (30 fps, 2 passadas, bitrate pela duraçêo)
 set -euo pipefail
 IN="$(realpath "$1")"; OUT="$(realpath -m "$2")"; TMP=$(mktemp -d)
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 "$IN")

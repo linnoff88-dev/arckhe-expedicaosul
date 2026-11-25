@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <!--VIEWPORT--><meta name="viewport" content="width=1080, height=1920" /><!--/VIEWPORT-->
-    <title>Expedição Sul · Rota</title>
+    <title>Expediçêo Sul · Rota</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
     <script src="assets/route.js"></script>
     <script src="assets/layers.js"></script>
@@ -188,7 +188,7 @@
       <!--AUDIO-END-->
 
       <div id="topbar">
-        <div id="brand"><div class="dot"></div><div class="name">EXPEDIÇÃO SUL</div><div class="sub" id="brand-sub"></div></div>
+        <div id="brand"><div class="dot"></div><div class="name">EXPEDIÇêO SUL</div><div class="sub" id="brand-sub"></div></div>
         <div id="coords"></div>
       </div>
 
@@ -329,7 +329,7 @@
         const c = posAt(clamp(P + ahead, 0, TOTAL));
         return { cx: c[0], cy: c[1], S, P };
       }
-      // visão geral: rota inteira
+      // visêo geral: rota inteira
       let minx = 1e15, maxx = -1e15, miny = 1e15, maxy = -1e15;
       for (let i = 0; i < PTS.length; i += 10) { const p = PTS[i]; minx = Math.min(minx, p[0]); maxx = Math.max(maxx, p[0]); miny = Math.min(miny, p[1]); maxy = Math.max(maxy, p[1]); }
       const OVC = Object.assign({ wfit: 1.25, hfit: 1.9, shift: 0.12 }, T.ov || {});
@@ -496,7 +496,7 @@
             const ix = Math.max(0, Math.min(FW, x + w) - Math.max(0, x)), iy = Math.max(0, Math.min(FH, y + h) - Math.max(0, y));
             const cov = (ix * iy) / (FW * FH);
             op = smooth(0.9, 0.995, cov);
-            // resolução: patch z12 só quando útil (evita custo); corredor sempre que cobre
+            // resoluçêo: patch z12 só quando útil (evita custo); corredor sempre que cobre
             if (L.name.startsWith("p12")) op *= smooth(0.03, 0.06, cam.S);
           }
           L.el.style.visibility = op > 0.002 ? "visible" : "hidden";

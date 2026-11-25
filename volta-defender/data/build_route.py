@@ -1,5 +1,5 @@
 """Rota da volta: OSRM (A) + ferry Colonia Express (OSM) + OSRM (B), km cumulativo único.
-Saídas: data/route_full.json (para os outros scripts) e assets/route.js (para a composição)."""
+Saídas: data/route_full.json (para os outros scripts) e assets/route.js (para a composiçêo)."""
 import json, os, bisect, time, urllib.parse, math
 from geo_util import get, haversine, lonlat_to_px, HERE
 

@@ -1,6 +1,6 @@
 """Mosaicos Esri World Imagery para uma viagem longa.
 Uso: python3 build_tiles.py <route_full.json> <assets_dir>
-Camadas: 'ov' z7 (visão geral), 'cor' z8 (corredor), e por parada: 'p10_<id>' z10 (±1.2°) e 'p12_<id>' z12 (±0.3° lon, ±0.25° lat).
+Camadas: 'ov' z7 (visêo geral), 'cor' z8 (corredor), e por parada: 'p10_<id>' z10 (±1.2°) e 'p12_<id>' z12 (±0.3° lon, ±0.25° lat).
 Grava <assets_dir>/map/<nome>.jpg (graduado) e <assets_dir>/layers.js (window.LAYERS)."""
 import json, os, sys, time, math
 from concurrent.futures import ThreadPoolExecutor
